@@ -1,0 +1,59 @@
+﻿@model ProjetoIF.Models.Projeto
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Projeto</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="NomeTarefa" class="control-label"></label>
+                <input asp-for="NomeTarefa" class="form-control" />
+                <span asp-validation-for="NomeTarefa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<ul class="nav nav-tabs mt-5" id="tabsProjeto" role="tablist">
+
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="tarefas-tab" data-toggle="tab" href="#tarefas" role="tab" aria-controls="tarefas" aria-selected="true">Tarefas</a>
+    </li>
+
+</ul>
+
+<div class="tab-content my-4" id="tabsProjetoContent">
+
+    <div class="tab-pane fade active show" id="tarefas" role="tabpanel" aria-labelledby="tarefas-tab">
+        <div class="my-3">
+            <button class="bttn-unite bttn-sm bttn-primary mt-4" onclick="location.href='@(Url.Action("Create", "Tarefas", new { projetoId = Model.Id }))'">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+            </svg>
+            </button>
+
+        </div>
+        @if (Model.Tarefa != null && Model.Tarefa.Count > 0)
+        {
+            await Html.RenderPartialAsync("~/Views/Tarefas/Index.cshtml", Model.Tarefa);
+        }
+        else
+        {
+            <p>Nenhuma tarefa cadastrada!</p>
+        }
+
+    </div>
+
+    </div>
