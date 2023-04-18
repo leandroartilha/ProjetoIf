@@ -47,8 +47,10 @@ namespace ProjetoIF.Controllers
         }
 
         // GET: Tarefas/Create
-        public IActionResult Create()
+        public IActionResult Create(int projetoId)
         {
+            ViewBag.ProjetoId = projetoId;
+
             ViewData["ProjetoId"] = new SelectList(_context.Projeto, "Id", "NomeProjeto");
             ViewData["UsuarioId"] = new SelectList(_context.Usuario, "Id", "NomeUsuario");
             return View();
@@ -59,22 +61,16 @@ namespace ProjetoIF.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Tarefa tarefa)
+        public async Task<IActionResult> Create(Tarefa tarefa, int idprojeto)
         {
-            if (ModelState.IsValid)
-            {
-
-            }
 
             ViewData["ProjetoId"] = new SelectList(_context.Projeto, "Id", "NomeProjeto", tarefa.ProjetoId);
             ViewData["UsuarioId"] = new SelectList(_context.Usuario, "Id", "NomeUsuario", tarefa.UsuarioId);
-
+            tarefa.ProjetoId = idprojeto;
             _context.Add(tarefa);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
 
-
-            //return View(tarefa);
+            return RedirectToAction("Edit", "Projetos", new { id = idprojeto });
         }
 
         // GET: Tarefas/Edit/5
@@ -86,10 +82,22 @@ namespace ProjetoIF.Controllers
             }
 
             var tarefa = await _context.Tarefa.FindAsync(id);
+
+
+            var atribuicaoUserTask = _context.AtribuicaoUserTask.Where(a => a.TarefaId == tarefa.Id)
+                .Select(a =>
+                new AtribuicaoUserTask
+                {
+                    Id = a.Id,
+                    NomeUsuarioAtribuido = a.NomeUsuarioAtribuido
+
+                }).ToList();
+
             if (tarefa == null)
             {
                 return NotFound();
             }
+            tarefa.AtribuicaoUserTask = atribuicaoUserTask;
             ViewData["ProjetoId"] = new SelectList(_context.Projeto, "Id", "Id", tarefa.ProjetoId);
             ViewData["UsuarioId"] = new SelectList(_context.Usuario, "Id", "EmailUsuario", tarefa.UsuarioId);
             return View(tarefa);

@@ -15,5 +15,6 @@ namespace ProjetoIF.Models
         public string NomeTarefa { get; set; }
 
         public ICollection<Tarefa> Tarefa { get; set; }
+        public ICollection<AtribuicaoUserProject>? AtribuicaoUserProject { get; set; }
     }
 }

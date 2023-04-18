@@ -27,5 +27,6 @@ namespace ProjetoIF.Models
         public int? ProjetoId { get; set; }
         public Projeto? Projeto { get; set; }
 
+        public ICollection<AtribuicaoUserTask>? AtribuicaoUserTask { get; set; }
     }
 }

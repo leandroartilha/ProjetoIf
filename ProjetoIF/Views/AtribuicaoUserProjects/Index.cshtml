@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ProjetoIF.Models.AtribuicaoUserProject>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeUsuarioAtribuido)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NomeUsuarioAtribuido)
+                </td>
+                <td>
+                    <a class="btn btn-icon text-danger" asp-controller="AtribuicaoUserProjects" asp-action="Delete" asp-route-id="@item.Id" asp-route-projetoId="@item.ProjetoId">
+                        <i class="fa fa-trash"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

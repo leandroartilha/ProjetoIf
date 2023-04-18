@@ -16,6 +16,46 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\40414403\Projetos\Trabalho\ProjetoIF\ProjetoIF
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/40414403/Projetos/Trabalho/ProjetoIF/ProjetoIF/Views/AtribuicaoUserProjects/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRyaWJ1aWNhb1VzZXJQcm9qZWN0c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/40414403/Projetos/Trabalho/ProjetoIF/ProjetoIF/Views/AtribuicaoUserProjects/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRyaWJ1aWNhb1VzZXJQcm9qZWN0c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/40414403/Projetos/Trabalho/ProjetoIF/ProjetoIF/Views/AtribuicaoUserProjects/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRyaWJ1aWNhb1VzZXJQcm9qZWN0c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/40414403/Projetos/Trabalho/ProjetoIF/ProjetoIF/Views/AtribuicaoUserProjects/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRyaWJ1aWNhb1VzZXJQcm9qZWN0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/40414403/Projetos/Trabalho/ProjetoIF/ProjetoIF/Views/AtribuicaoUserProjects/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRyaWJ1aWNhb1VzZXJQcm9qZWN0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/40414403/Projetos/Trabalho/ProjetoIF/ProjetoIF/Views/AtribuicaoUserTasks/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRyaWJ1aWNhb1VzZXJUYXNrc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/40414403/Projetos/Trabalho/ProjetoIF/ProjetoIF/Views/AtribuicaoUserTasks/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRyaWJ1aWNhb1VzZXJUYXNrc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/40414403/Projetos/Trabalho/ProjetoIF/ProjetoIF/Views/AtribuicaoUserTasks/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRyaWJ1aWNhb1VzZXJUYXNrc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/40414403/Projetos/Trabalho/ProjetoIF/ProjetoIF/Views/AtribuicaoUserTasks/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRyaWJ1aWNhb1VzZXJUYXNrc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/40414403/Projetos/Trabalho/ProjetoIF/ProjetoIF/Views/AtribuicaoUserTasks/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRyaWJ1aWNhb1VzZXJUYXNrc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/40414403/Projetos/Trabalho/ProjetoIF/ProjetoIF/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -4,13 +4,39 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<style>
+    /*table.dataTable.no-footer {
+                            border: 1px solid #dee2e6 !important;
+                        }*/
+
+    .styled-table tbody {
+        //background-color: var(--primary);
+    }
+
+    .my-trs tr {
+        cursor: pointer;
+        transition: all 0.15s;
+    }
+
+        .my-trs tr td {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .my-trs tr:hover {
+            color: var(--primary);
+            transform: translateX(13px);
+        }
+</style>
+
+<h4>Projetos</h4>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Adicionar novo projeto</a>
 </p>
-<table class="table">
-    <thead>
+<table class="table styled-table" style="font-size: small;">
+    <thead class="styled-table-thead">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.NomeTarefa)
@@ -18,15 +44,13 @@
             <th></th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="my-trs">
 @foreach (var item in Model) {
-        <tr>
+            <tr onclick="location.href='@(Url.Action("Edit", "Projetos", new { id = item.Id }))'">
             <td>
                 @Html.DisplayFor(modelItem => item.NomeTarefa)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>

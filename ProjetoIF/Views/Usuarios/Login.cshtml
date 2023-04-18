@@ -1,4 +1,4 @@
-﻿@model ProjetoIF.Models.Login
+﻿@model ProjetoIF.Models.Usuario
 @{
     ViewData["Title"] = "Login";
 }
@@ -11,9 +11,9 @@
         <div class="row">
             <div class="col">
                 <div class="form-group">
-                    <label asp-for="EmailLogin" class="control-label"></label>
-                    <input asp-for="EmailLogin" class="form-control" type="email" placeholder="Digite seu email" />
-                    <span asp-validation-for="EmailLogin" class="text-danger"></span>
+                    <label asp-for="EmailUsuario" class="control-label"></label>
+                    <input asp-for="EmailUsuario" class="form-control" type="email" placeholder="Digite seu email" />
+                    <span asp-validation-for="EmailUsuario" class="text-danger"></span>
                     @*@Html.ValidationMessageFor(u => u.EmailUsuario)*@
                 </div>
             </div>
@@ -22,9 +22,9 @@
         <div class="row mb-3">
             <div class="col">
                 <div class="form-group">
-                    <label asp-for="SenhaLogin" class="control-label"></label>
-                    <input asp-for="SenhaLogin" class="form-control" type="password" placeholder="Digite sua senha" />
-                    <span asp-validation-for="SenhaLogin" class="text-danger"></span>
+                    <label asp-for="SenhaUsuario" class="control-label"></label>
+                    <input asp-for="SenhaUsuario" class="form-control" type="password" placeholder="Digite sua senha" />
+                    <span asp-validation-for="SenhaUsuario" class="text-danger"></span>
                     @*@Html.ValidationMessageFor(u => u.SenhaUsuario)*@
                 </div>
             </div>

@@ -22,6 +22,58 @@ namespace ProjetoIF.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("ProjetoIF.Models.AtribuicaoUserProject", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("NomeUsuarioAtribuido")
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<int?>("ProjetoId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProjetoId");
+
+                    b.HasIndex("UsuarioId");
+
+                    b.ToTable("AtribuicaoUserProject");
+                });
+
+            modelBuilder.Entity("ProjetoIF.Models.AtribuicaoUserTask", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("NomeUsuarioAtribuido")
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<int?>("TarefaId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TarefaId");
+
+                    b.HasIndex("UsuarioId");
+
+                    b.ToTable("AtribuicaoUserTask");
+                });
+
             modelBuilder.Entity("ProjetoIF.Models.Login", b =>
                 {
                     b.Property<int>("Id")
@@ -40,7 +92,7 @@ namespace ProjetoIF.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Login", (string)null);
+                    b.ToTable("Login");
                 });
 
             modelBuilder.Entity("ProjetoIF.Models.Projeto", b =>
@@ -57,7 +109,7 @@ namespace ProjetoIF.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Projeto", (string)null);
+                    b.ToTable("Projeto");
                 });
 
             modelBuilder.Entity("ProjetoIF.Models.Tarefa", b =>
@@ -87,7 +139,7 @@ namespace ProjetoIF.Migrations
 
                     b.HasIndex("UsuarioId");
 
-                    b.ToTable("Tarefa", (string)null);
+                    b.ToTable("Tarefa");
                 });
 
             modelBuilder.Entity("ProjetoIF.Models.Usuario", b =>
@@ -112,7 +164,37 @@ namespace ProjetoIF.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Usuario", (string)null);
+                    b.ToTable("Usuario");
+                });
+
+            modelBuilder.Entity("ProjetoIF.Models.AtribuicaoUserProject", b =>
+                {
+                    b.HasOne("ProjetoIF.Models.Projeto", "Projeto")
+                        .WithMany("AtribuicaoUserProject")
+                        .HasForeignKey("ProjetoId");
+
+                    b.HasOne("ProjetoIF.Models.Usuario", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("UsuarioId");
+
+                    b.Navigation("Projeto");
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("ProjetoIF.Models.AtribuicaoUserTask", b =>
+                {
+                    b.HasOne("ProjetoIF.Models.Tarefa", "Tarefa")
+                        .WithMany("AtribuicaoUserTask")
+                        .HasForeignKey("TarefaId");
+
+                    b.HasOne("ProjetoIF.Models.Usuario", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("UsuarioId");
+
+                    b.Navigation("Tarefa");
+
+                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("ProjetoIF.Models.Tarefa", b =>
@@ -132,7 +214,14 @@ namespace ProjetoIF.Migrations
 
             modelBuilder.Entity("ProjetoIF.Models.Projeto", b =>
                 {
+                    b.Navigation("AtribuicaoUserProject");
+
                     b.Navigation("Tarefa");
+                });
+
+            modelBuilder.Entity("ProjetoIF.Models.Tarefa", b =>
+                {
+                    b.Navigation("AtribuicaoUserTask");
                 });
 
             modelBuilder.Entity("ProjetoIF.Models.Usuario", b =>

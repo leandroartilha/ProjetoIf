@@ -24,6 +24,7 @@ namespace ProjetoIF.Controllers
         {
             var projetos = await _context.Projeto
                 .Include(p => p.Tarefa)
+                .Include(p => p.AtribuicaoUserProject)
                 .ToListAsync();
             return View(projetos);
         }
@@ -60,10 +61,7 @@ namespace ProjetoIF.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create( Projeto projeto)
         {
-            if (ModelState.IsValid)
-            {
-
-            }
+           
             _context.Add(projeto);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -83,6 +81,15 @@ namespace ProjetoIF.Controllers
                 return NotFound();
             }
 
+            var atribuicaoUserProject = _context.AtribuicaoUserProject.Where(a => a.ProjetoId == projeto.Id)
+                .Select(a =>
+                new AtribuicaoUserProject
+                {
+                    Id = a.Id,
+                    NomeUsuarioAtribuido = a.NomeUsuarioAtribuido,
+                    
+                }).ToList();
+
             var tarefas = _context.Tarefa.Where(a => a.ProjetoId == projeto.Id)
                  .Select(t =>
                  new Tarefa
@@ -90,7 +97,10 @@ namespace ProjetoIF.Controllers
                      Id = t.Id,
                      NomeTarefa = t.NomeTarefa,
                      Usuario = t.Usuario
-                 }).ToList(); projeto.Tarefa = tarefas;
+                 }).ToList();
+
+            projeto.AtribuicaoUserProject = atribuicaoUserProject;
+            projeto.Tarefa = tarefas;
             return View(projeto);
         }
 

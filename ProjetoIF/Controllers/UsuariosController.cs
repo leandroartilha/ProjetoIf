@@ -58,10 +58,7 @@ namespace ProjetoIF.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Usuario usuario)
         {
-            if (ModelState.IsValid)
-            {
-
-            }
+            
             _context.Add(usuario);
             await _context.SaveChangesAsync();
             return RedirectToAction("Usuarios","Login");
@@ -76,20 +73,29 @@ namespace ProjetoIF.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Login(Login login)
+        public IActionResult Login(Usuario usuario)
         {
-            if (ModelState.IsValid)
+            var userEmail = _context.Usuario
+                .Where(u => u.EmailUsuario == usuario.EmailUsuario)
+                .Select(u => u.EmailUsuario)
+                .FirstOrDefault();
+
+            var userSenha = _context.Usuario
+                .Where(u => u.EmailUsuario == userEmail)
+                .Select(u => u.SenhaUsuario)
+                .FirstOrDefault();
+
+            if(usuario.EmailUsuario == null || usuario.SenhaUsuario == null)
             {
-
-                if(login.EmailLogin == "leandro.artilha@gmail.com" && login.SenhaLogin == "12345")
-                {
-                    return RedirectToAction("Index", "Home");
-                }
-                //return _context.Usuario.FirstOrDefault(u => u.EmailUsuario.ToUpper() == usuario.EmailUsuario.ToUpper());
-
-                //return RedirectToAction(nameof(Index));
+                return RedirectToAction("Login", "Usuarios");
             }
-            return RedirectToAction("Login","Usuarios");
+
+            else /*(userEmail == usuario.EmailUsuario && userSenha == usuario.SenhaUsuario) */
+                {
+                    return RedirectToAction("Index", "Projetos");
+                }
+
+            //return RedirectToAction("Login","Usuarios");
         }
 
         // GET: Usuarios/Edit/5

@@ -19,5 +19,11 @@ namespace ProjetoIF.Context
 
         }
 
+
+        public DbSet<ProjetoIF.Models.AtribuicaoUserProject>? AtribuicaoUserProject { get; set; }
+
+
+        public DbSet<ProjetoIF.Models.AtribuicaoUserTask>? AtribuicaoUserTask { get; set; }
+
     }
 }

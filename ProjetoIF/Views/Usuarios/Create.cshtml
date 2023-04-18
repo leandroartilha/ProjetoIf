@@ -4,9 +4,7 @@
     ViewData["Title"] = "Cadastro";
 }
 
-<h1>Cadastrar Usuário</h1>
-
-<h4>Usuario</h4>
+<h4>Cadastre-se</h4>
 <hr />
 <div class="col-md-4">
     <form asp-action="Create">
@@ -32,7 +30,7 @@
             <div class="col">
                 <div class="form-group">
                     <label asp-for="SenhaUsuario" class="control-label"></label>
-                    <input asp-for="SenhaUsuario" class="form-control" />
+                    <input asp-for="SenhaUsuario" class="form-control" type="password"/>
                     <span asp-validation-for="SenhaUsuario" class="text-danger"></span>
                 </div>
             </div>

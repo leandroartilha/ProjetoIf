@@ -5,16 +5,164 @@
       "PackagePath": "staticwebassets\\ProjetoIF.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\Files\\INPUT_MASSIVO_ATIVOS.xlsx",
+      "PackagePath": "staticwebassets\\Files\\INPUT_MASSIVO_ATIVOS.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\Files\\INPUT_MASSIVO_ENVOLVIDOS.xlsx",
+      "PackagePath": "staticwebassets\\Files\\INPUT_MASSIVO_ENVOLVIDOS.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\assets\\demo\\chart-area-demo.js",
+      "PackagePath": "staticwebassets\\assets\\demo\\chart-area-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\assets\\demo\\chart-bar-demo.js",
+      "PackagePath": "staticwebassets\\assets\\demo\\chart-bar-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\assets\\demo\\chart-pie-demo.js",
+      "PackagePath": "staticwebassets\\assets\\demo\\chart-pie-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\assets\\demo\\datatables-demo.js",
+      "PackagePath": "staticwebassets\\assets\\demo\\datatables-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\assets\\img\\error-404-monochrome.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\error-404-monochrome.svg"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\css\\Filter.css",
+      "PackagePath": "staticwebassets\\css\\Filter.css"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\css\\bootstrap-extended.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-extended.min.css"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\css\\bttn.min.css",
+      "PackagePath": "staticwebassets\\css\\bttn.min.css"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\css\\colors.min.css",
+      "PackagePath": "staticwebassets\\css\\colors.min.css"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\css\\error.css",
+      "PackagePath": "staticwebassets\\css\\error.css"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\css\\fstdropdown.min.css",
+      "PackagePath": "staticwebassets\\css\\fstdropdown.min.css"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\css\\jquery.datatables.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery.datatables.min.css"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\css\\navbar.css",
+      "PackagePath": "staticwebassets\\css\\navbar.css"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\css\\notif.css",
+      "PackagePath": "staticwebassets\\css\\notif.css"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\css\\selectize.bootstrap4.css",
+      "PackagePath": "staticwebassets\\css\\selectize.bootstrap4.css"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\css\\selectize.css",
+      "PackagePath": "staticwebassets\\css\\selectize.css"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\css\\simple-line-icons.min.css",
+      "PackagePath": "staticwebassets\\css\\simple-line-icons.min.css"
+    },
+    {
       "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\css\\stepper.css",
+      "PackagePath": "staticwebassets\\css\\stepper.css"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\css\\toastr.min.css",
+      "PackagePath": "staticwebassets\\css\\toastr.min.css"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\iconscrum.ico",
+      "PackagePath": "staticwebassets\\iconscrum.ico"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\images\\sort_asc.png",
+      "PackagePath": "staticwebassets\\images\\sort_asc.png"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\images\\sort_both.png",
+      "PackagePath": "staticwebassets\\images\\sort_both.png"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\images\\sort_desc.png",
+      "PackagePath": "staticwebassets\\images\\sort_desc.png"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\js\\Filter.js",
+      "PackagePath": "staticwebassets\\js\\Filter.js"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\js\\all.min.js",
+      "PackagePath": "staticwebassets\\js\\all.min.js"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\js\\fstdropdown.min.js",
+      "PackagePath": "staticwebassets\\js\\fstdropdown.min.js"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\js\\jquery.blockUI.js",
+      "PackagePath": "staticwebassets\\js\\jquery.blockUI.js"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\js\\jquery.datatables.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.datatables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\js\\jquery.mask.js",
+      "PackagePath": "staticwebassets\\js\\jquery.mask.js"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\js\\jquery.validate.custom.pt-br.js",
+      "PackagePath": "staticwebassets\\js\\jquery.validate.custom.pt-br.js"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\js\\navbar.js",
+      "PackagePath": "staticwebassets\\js\\navbar.js"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\js\\selectize.min.js",
+      "PackagePath": "staticwebassets\\js\\selectize.min.js"
     },
     {
       "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\js\\sweetalert.js",
+      "PackagePath": "staticwebassets\\js\\sweetalert.js"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\js\\toastr.min.js",
+      "PackagePath": "staticwebassets\\js\\toastr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\json\\estados-cidades.json",
+      "PackagePath": "staticwebassets\\json\\estados-cidades.json"
     },
     {
       "Id": "C:\\Users\\40414403\\Projetos\\Trabalho\\ProjetoIF\\ProjetoIF\\wwwroot\\lib\\bootstrap\\LICENSE",
